@@ -1,0 +1,27 @@
+﻿image,label,field,issue,mine,peer,verdict,guideline_rule,action
+D01.png,frame_meta,light,khác giá trị,night,unknown,peer,4.2 (SVIRO: light=unknown; DMS NIR: khong doan dem),Huy doi light -> unknown
+S01_ir.png,face,eye_left,khác giá trị (IoU=0.95),unknown,open,mine,"4.4-1 (khong thay thi unknown, khong doan tu anh khac)",Vu doi -> unknown; mat nho trong IR-sim
+S01_ir.png,face,eye_right,khác giá trị (IoU=0.95),unknown,open,mine,"4.4-1 (khong thay thi unknown, khong doan tu anh khac)",Vu doi -> unknown; mat nho trong IR-sim
+S01_ir.png,face,glasses,khác giá trị (IoU=0.95),unknown,clear,mine,"4.4-1 (khong thay thi unknown, khong doan tu anh khac)",Vu doi -> unknown; mat nho trong IR-sim
+S01_rgb.png,face,eye_left,khác giá trị (IoU=0.98),unknown,open,mine,"4.4-1 (khong thay thi unknown, khong doan tu anh khac)",Vu doi -> unknown; mat nho trong IR-sim
+S01_rgb.png,face,eye_right,khác giá trị (IoU=0.98),unknown,open,mine,"4.4-1 (khong thay thi unknown, khong doan tu anh khac)",Vu doi -> unknown; mat nho trong IR-sim
+S01_rgb.png,face,glasses,khác giá trị (IoU=0.98),unknown,clear,mine,"4.4-1 (khong thay thi unknown, khong doan tu anh khac)",Vu doi -> unknown; mat nho trong IR-sim
+S02_ir.png,child_seat,occupied,khác giá trị (IoU=0.99),no,yes,mine,4.8 (khong dung yes),Vu doi occupied -> no/unknown; Vu loi cabin_check ERROR
+S02_ir.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.44,,ambiguous,4.8/Task 0 (ve face cho nguoi lon),2 ban mo CVAT doi vi tri box face tren S02_ir; neu khong thong nhat thi hoi coach
+S02_ir.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,ambiguous,4.8/Task 0 (ve face cho nguoi lon),2 ban mo CVAT doi vi tri box face tren S02_ir; neu khong thong nhat thi hoi coach
+S02_rgb.png,frame_meta,light,khác giá trị,day,unknown,peer,4.2 (SVIRO: light=unknown; DMS NIR: khong doan dem),Huy doi light -> unknown
+S02_rgb.png,child_seat,occupied,khác giá trị (IoU=0.92),no,yes,mine,4.8 (khong dung yes),Vu doi occupied -> no/unknown; Vu loi cabin_check ERROR
+S05_ir.png,frame_meta,light,khác giá trị,day,unknown,peer,4.2 (SVIRO: light=unknown; DMS NIR: khong doan dem),Huy doi light -> unknown
+S05_ir.png,child_seat,occupied,khác giá trị (IoU=0.98),no,yes,mine,4.8 (khong dung yes),Vu doi occupied -> no/unknown; Vu loi cabin_check ERROR
+S05_rgb.png,child_seat,occupied,khác giá trị (IoU=0.99),no,yes,mine,4.8 (khong dung yes),Vu doi occupied -> no/unknown; Vu loi cabin_check ERROR
+S06_ir.png,face,eye_left,khác giá trị (IoU=0.94),unknown,open,ambiguous,4.4-1/4.6,Mo S06 rgb+ir doi chieu; Vu kiem lai khong suy tu RGB
+S06_ir.png,face,eye_right,khác giá trị (IoU=0.94),unknown,open,ambiguous,4.4-1/4.6,Mo S06 rgb+ir doi chieu; Vu kiem lai khong suy tu RGB
+S06_ir.png,face,gaze_zone,khác giá trị (IoU=0.94),other,center,ambiguous,4.4-1/4.6,Mo S06 rgb+ir doi chieu; Vu kiem lai khong suy tu RGB
+S06_ir.png,face,glasses,khác giá trị (IoU=0.94),unknown,none,ambiguous,4.4-1/4.6,Mo S06 rgb+ir doi chieu; Vu kiem lai khong suy tu RGB
+S06_rgb.png,face,eye_left,khác giá trị (IoU=0.90),unknown,open,ambiguous,4.4-1/4.6,Mo S06 rgb+ir doi chieu; Vu kiem lai khong suy tu RGB
+S06_rgb.png,face,eye_right,khác giá trị (IoU=0.90),unknown,open,ambiguous,4.4-1/4.6,Mo S06 rgb+ir doi chieu; Vu kiem lai khong suy tu RGB
+S06_rgb.png,face,gaze_zone,khác giá trị (IoU=0.90),other,center,ambiguous,4.4-1/4.6,Mo S06 rgb+ir doi chieu; Vu kiem lai khong suy tu RGB
+S06_rgb.png,face,glasses,khác giá trị (IoU=0.90),unknown,none,ambiguous,4.4-1/4.6,Mo S06 rgb+ir doi chieu; Vu kiem lai khong suy tu RGB
+S07_ir.png,child_seat,occupied,khác giá trị (IoU=0.99),no,unknown,ambiguous,4.8 (no khi thay trong; unknown khi khong ro),"Mo anh S07_ir doi chieu: trong thi no, khong ro thi unknown"
+S08_ir.png,object,seat,khác giá trị (IoU=1.00),rear_right,rear_left,mine,4.4-3 (ghe theo xe; trai anh = rear_right),Vu doi seat -> rear_right
+S09_ir.png,frame_meta,light,khac gia tri,day,unknown,peer,4.2 (SVIRO: light=unknown),Huy doi light -> unknown

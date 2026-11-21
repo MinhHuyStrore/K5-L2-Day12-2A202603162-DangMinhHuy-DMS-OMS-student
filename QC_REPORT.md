@@ -13,13 +13,14 @@
 | E1 — `export_final.zip` (22 ảnh: S01–S08 + D01–D06, gộp từ 2 task CVAT, không kèm ảnh) | ✅ `check_final.txt`: **0 lỗi**, 2 WARN đã có dòng giải thích |
 | E1 mở rộng — `export_extra.zip` (S09–S10) | ✅ `check_extra.txt`: 0 lỗi, 1 WARN có giải thích |
 | E2 — `check_cpA.txt` / `check_cpB.txt` / `check_final.txt` | ✅ đủ 3, chạy trên bản nhãn hiện hành |
-| E3 — `disagreement_log.csv` | ⏳ **CHƯA** — cần file export của bạn cùng lớp, chạy: `python scripts/cabin_check.py diff K5-L2-DAY12-DangMinhHuy-2A202603162-DMSOMS/export_final.zip <peer>.zip --csv K5-L2-DAY12-DangMinhHuy-2A202603162-DMSOMS/disagreement_log.csv` rồi điền verdict/guideline_rule/action |
-| E4 — `ir_log.csv` | 📝 bản nháp 6 quan sát (4 SVIRO IR-sim + 2 NIR thật) — **bạn phải mở ảnh xác nhận từng dòng** |
-| E5 — `class_list_v0.md` | 📝 bản nháp 7 lớp DMS + 7 lớp OMS + 2 câu hỏi leo thang — rà lại trước nộp |
-| TEAM / prompts / self_review | 📝 đã điền theo dữ liệu thật của phiên QC; sửa các chỗ `_(điền)_` |
-| exit_ticket.md | ⬜ **tự làm** (10 phút, không mở slide) |
+| E3 — `disagreement_log.csv` | ✅ **HOÀN THÀNH 22/11** — peer: Trương Tuấn Vũ (2A202603078). 26 dòng bất đồng, đã điền đủ verdict/rule/action: 10 dòng Vũ đúng (light→unknown, 4.2), 8 dòng Huy đúng (occupied=yes bị cấm, 4.8; seat S08 theo 4.4-3; mắt S01 unknown theo 4.4-1), 8 dòng ambiguous ghi chờ coach (face box S02_ir IoU=0,44; mắt/kính/gaze S06; occupied S07_ir). Bài Vũ cabin_check báo 4 ERROR occupied=yes — Vũ đã nhận sửa |
+| E4 — `ir_log.csv` | 📝 6 quan sát — **bạn mở ảnh xác nhận từng dòng** |
+| E5 — `class_list_v0.md` | 📝 7+7 lớp, 2 câu leo thang — rà lại trước nộp |
+| Việc còn lại sau review chéo | ⚠️ Huy cần sửa trên CVAT: `light` → `unknown` ở D01/S02_rgb/S05_ir/S09_ir (kết luận peer đúng), export lại `export_final_v2.zip` + chạy `check_final_v2.txt` (rubric E3 yêu cầu nếu có sửa sau review) |
 
-**Chi tiết sửa lỗi qua 3 vòng:** OMS: 8 ERROR → 1 → 0. Đã sửa: đủ frame_meta 26/26 · `child_seat.occupied` hết giá trị `yes` · xóa toàn bộ box trùng S02_rgb (9→3 box) và S06_rgb · S05_rgb `driver`→`rear_right` · S03 object thống nhất `rear_right` · `light` SVIRO chuẩn hóa `unknown` còn 3 ảnh giải trình được.
+## 0a. Diễn biến sửa lỗi (tóm tắt)
+
+OMS: 8 ERROR → 1 → 0. Đã sửa: đủ frame_meta 26/26 · `child_seat.occupied` hết giá trị `yes` · xóa toàn bộ box trùng S02_rgb (9→3 box) và S06_rgb · S05_rgb `driver`→`rear_right` · S03 object thống nhất `rear_right` · `light` SVIRO chuẩn hóa `unknown` còn 3 ảnh giải trình được.
 
 ## 1. Tổng quan lần 2 (lưu lịch sử)
 

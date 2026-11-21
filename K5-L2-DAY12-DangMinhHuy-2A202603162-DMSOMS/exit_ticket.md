@@ -1,8 +1,6 @@
 # Exit ticket — Ngày 12
 
-Làm cá nhân, không mở slide, khoảng 10 phút. Ghi đáp án ngay dưới mỗi câu.
-
-**Họ tên:** … · **Mã:** Gxx
+**Họ tên:** Đặng Minh Huy · **Mã:** G09
 
 ---
 
@@ -13,11 +11,20 @@ Làm cá nhân, không mở slide, khoảng 10 phút. Ghi đáp án ngay dưới
 - C. Để có ảnh màu đẹp hơn cho cuộc gọi video
 - D. Để camera nhìn xuyên qua mọi loại kính râm
 
-Đáp án: …
+**Đáp án: B**
+
+> Vì 940nm mắt người không thấy nên không bị chói, mà camera vẫn thấy được cả ngày lẫn đêm.
+
+---
 
 **Câu 2 · Số, 2 chữ số thập phân.** Camera DMS chạy 30 khung hình/giây. Model ước lượng yaw của đầu tài xế lớn hơn 30° liên tục từ khung hình số 240 đến khung hình số 314, **tính cả khung 240 và khung 314**. Tài xế không nhìn đường trong bao nhiêu giây?
 
-Đáp án: … s
+**Đáp án: 2.50 s**
+
+> Tính: 314 - 240 + 1 = 75 khung hình
+> 75 / 30 = 2.50 giây
+
+---
 
 **Câu 3 · Chọn tất cả đáp án đúng.** Những câu nào đúng về dữ liệu cabin so với dữ liệu camera ngoài xe?
 
@@ -27,4 +34,7 @@ Làm cá nhân, không mở slide, khoảng 10 phút. Ghi đáp án ngay dưới
 - D. Vật trong cabin thường ở xa và nhỏ, nhiều vật trong một ảnh.
 - E. Cảnh cabin cố định nên không cần guideline hay QC riêng.
 
-Đáp án: …
+**Đáp án: A, B, C**
+
+> D sai vì vật trong cabin ở gần và to, không phải xa và nhỏ như ngoài xe.
+> E sai vì càng cố định càng cần guideline và QC riêng để gán nhất quán.

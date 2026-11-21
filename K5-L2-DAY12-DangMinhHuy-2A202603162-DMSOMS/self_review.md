@@ -19,4 +19,8 @@ Lần sau tránh bằng cách: gắn `frame_meta` **ngay khi mở một ảnh m�
 
 ## 3. Ghi chú về disagreement_log
 
-_(điền sau khi chạy `cabin_check diff` với bạn review — ví dụ mẫu: bạn ấy đúng ở dòng `frame_meta.light`: ảnh SVIRO là dựng nên phải `unknown`, mình giữ `day` theo render là sai tinh thần guideline 4.6 — học được: giá trị metadata phản ánh khả năng quan sát của camera, không phản ánh cảnh trong ảnh dựng.)_
+Dòng bạn ấy đúng và mình sai: `frame_meta.light` ở D01.png — mình ghi `night` vì ảnh NIR tối, Vũ để `unknown`. Theo guideline 4.2/4.4-1, ảnh hồng ngoại không đánh giá được sáng/tối thật bằng mắt thường nên `unknown` là đúng chuẩn; mình đã sửa D01, S02_rgb, S05_ir, S09_ir về `unknown`.
+
+Mình học được: metadata phản ánh **khả năng quan sát của camera**, không phản ánh cảm nhận của người xem ảnh — thấy tối không đồng nghĩa là "đêm".
+
+Ngược lại, Vũ sai ở 4 box `child_seat.occupied=yes` (guideline 4.8 cấm `yes`) — Vũ đã sửa; và seat object S08_ir (trái ảnh = `rear_right` theo 4.4-3). 8 dòng còn lại (mắt/kính S01, S06; face box S02_ir; occupied S07_ir) hai bạn chưa thống nhất, đã ghi ở `TEAM.md` để hỏi coach.

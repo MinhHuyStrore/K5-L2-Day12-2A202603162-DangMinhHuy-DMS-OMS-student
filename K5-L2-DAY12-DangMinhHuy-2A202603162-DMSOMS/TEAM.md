@@ -4,7 +4,13 @@ Mã bộ ảnh: **G09** · Hình thức: **cá nhân**
 
 | Họ tên | MSSV | Đã gán đủ 22 ảnh? | Review chéo với (peer diff) | Số dòng disagreement đã xử lý |
 |---|---|---|---|---|
-| Đặng Minh Huy | 2A202603162 | có | _Trương Tuấn Vũ_ | _6_ |
+| Đặng Minh Huy | 2A202603162 | có | Trương Tuấn Vũ (2A202603078) | 26 (10 peer đúng, 8 mine đúng, 8 ambiguous — xem disagreement_log.csv) |
+
+Ca hai bạn vẫn không thống nhất và đã hỏi coach (ghi tên ảnh + đối tượng):
+
+- S02_ir: box `face` hai bạn đặt vị trí khác nhau (IoU=0,44) — cần coach xác định mặt nào đúng.
+- S06_rgb/ir: `eye_left/right`, `glasses`, `gaze_zone` — Vũ thấy open/none/center, Huy để unknown; chưa thống nhất vì ảnh IR-sim tối.
+- S07_ir: `child_seat.occupied` — Huy `no`, Vũ `unknown`; cần soi ảnh xác định ghế trống rõ hay không.
 
 
 ## Cá nhân
