@@ -1,0 +1,7 @@
+File: export_extra.zip
+Ảnh: 4 · đã có frame_meta: 4 · số đối tượng: child_seat=2, face=4, infant_seat=2, person=4
+  [WARN] S09_ir.png: ảnh SVIRO là ảnh dựng: light nên là 'unknown'
+Kết quả: 0 lỗi, 1 cảnh báo. Cảnh báo cần bạn tự xét, không tự động là sai.
+-- Giải thích cảnh báo còn lại (yêu cầu E2 của CHECKPOINTS):
+-- S09_ir.png: như trên — light='day' theo render của cảnh SVIRO dựng, ảnh dựng không đánh giá
+-- sáng/tối thật; không ảnh hưởng trường nhãn nào khác.

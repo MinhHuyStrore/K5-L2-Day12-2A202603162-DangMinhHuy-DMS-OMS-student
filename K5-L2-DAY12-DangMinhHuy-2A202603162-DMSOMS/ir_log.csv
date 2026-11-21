@@ -1,0 +1,7 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+S01_ir,IR_sim,"Ảnh IR-sim mất hoàn toàn màu sắc: người ghế rear_right áo tối, không phân biệt được dây an toàn chéo người với nếp áo",person.seatbelt,"Ghi not_worn theo RGB cùng cảnh; trên IR để unknown nếu chỉ nhìn ảnh ir"
+S05_ir,IR_sim,"Vùng kính/mắt bị chói đều trên IR-sim, không xác định được mắt phải mở hay khép (khác RGB thấy mắt trái open)",face.eye_right,"eye_right=unknown trên cả cặp, không đoán closed"
+S04_ir,IR_sim,"IR-sim render ban đêm mất chi tiết khuôn mặt nhỏ; mặt sau infant_seat chỉ đủ rộng để box face, chưa đủ tin cậy thuộc tính",face.glasses face.gaze_zone,"Toàn bộ thuộc tính face để unknown/other"
+D01,real_IR,"Ảnh NIR camera DMS xoay ~90°: trục trái/phải theo người nằm theo trục y của ảnh, không theo trục x",face13.left_eye_* right_eye_*,"Quy ước left/right theo người lái: left_eye có y lớn hơn; ghi chú giải thích trong check_cpB.txt"
+D04,real_IR,"Tay lái che một nửa khuôn mặt trong NIR; các điểm mũi/miệng nằm sau vật che",face13.nose_tip mouth_left lip_upper,"Bật cờ occluded=1 cho điểm bị che, eye_left/eye_right=unknown; không đoán vị trí"
+D06,real_IR,"Góc quay đầu làm nửa mặt phải rời khỏi khung ảnh NIR",face13.right_eye_*,"Bật outside=1 cho 5 điểm phía phải; eye_right=unknown vì không thấy mí"

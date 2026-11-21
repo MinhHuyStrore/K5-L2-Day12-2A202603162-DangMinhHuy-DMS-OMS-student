@@ -1,0 +1,9 @@
+File: export_final.zip
+Ảnh: 22 · đã có frame_meta: 22 · số đối tượng: child_seat=10, face=18, face13=6, hand=12, infant_seat=8, object=14, person=18, phone=1
+  [WARN] S02_rgb.png: ảnh SVIRO là ảnh dựng: light nên là 'unknown'
+  [WARN] S05_ir.png: ảnh SVIRO là ảnh dựng: light nên là 'unknown'
+Kết quả: 0 lỗi, 2 cảnh báo. Cảnh báo cần bạn tự xét, không tự động là sai.
+-- Giải thích cảnh báo còn lại (yêu cầu E2 của CHECKPOINTS):
+-- S02_rgb.png, S05_ir.png: ảnh SVIRO là IR-sim dựng; light='day' lấy theo độ sáng render của chính
+--cảnh dựng (đèn nội thất bật). Không có ảnh thật để đối chiếu. Các ảnh SVIRO khác đã để unknown.
+-- Cảnh báo không ảnh hưởng trường nhãn nào khác (seat, seatbelt, modality đã kiểm theo guideline 4.4).
